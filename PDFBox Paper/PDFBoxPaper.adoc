@@ -24,6 +24,7 @@ Then reload your dependencies, and you're good to go.
 Now that we've set up our project we can start working with PDFBox. Let's start by creating an empty PDF.
 
 First we need to create a PDFDocument, this class basically embodies an entire PDF file.
+
 [source, java]
 ----
 // Create a new empty document
@@ -31,6 +32,7 @@ PDDocument myDocument = new PDDocument();
 ----
 
 To populate our PDF with a page, we need to create one.
+
 [source, java]
 ----
 // Create a new page without content
@@ -38,6 +40,7 @@ PDPage blankPage = new PDPage();
 ----
 
 Now we need to add the page to our document.
+
 [source, java]
 ----
 // Add the page to the document
@@ -45,6 +48,7 @@ myDocument.addPage(blankPage);
 ----
 
 Finally, we need to save and close our PDF in order to actually create it.
+
 [source, java]
 ----
 // Save the document and close it
