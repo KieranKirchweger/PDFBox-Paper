@@ -1,11 +1,13 @@
-# Manipulating PDFs in Java with Apache PDFBox
+= Manipulating PDFs in Java with Apache PDFBox
 
-## Table of Content
+== Table of Content
 
-## Getting Started
-For this paper, we will create a maven project to showcase different usages for the PDFBox library. First we need to add PDFBox to our project.
+== Before we Start
+For this paper, we will create a maven project to showcase different usages for the PDFBox library.
+First set up a Java project with Maven in the IDE of your choice. To learn how to check out the  do that https://maven.apache.org/guides/getting-started/[official getting started with Maven guide].
 
-To do that, simply add the following to your Maven project's pom.xml in the `dependencies` section:
+Then we can add PDFBox to our project.
+To do that, simply add the following to your Maven project's pom.xml in the *dependencies* section:
 
 [source, xml]
 ----
@@ -16,4 +18,39 @@ To do that, simply add the following to your Maven project's pom.xml in the `dep
 </dependency>
 ----
 
-Then reload your dependencies and you're good to go.
+Then reload your dependencies, and you're good to go.
+
+== First Steps
+Now that we've set up our project we can start working with PDFBox. Let's start by creating an empty PDF.
+
+First we need to create a PDFDocument, this class basically embodies an entire PDF file.
+[source, java]
+----
+// Create a new empty document
+PDDocument myDocument = new PDDocument();
+----
+
+To populate our PDF with a page, we need to create one.
+[source, java]
+----
+// Create a new page without content
+PDPage blankPage = new PDPage();
+----
+
+Now we need to add the page to our document.
+[source, java]
+----
+// Add the page to the document
+myDocument.addPage(blankPage);
+----
+
+Finally, we need to save and close our PDF in order to actually create it.
+[source, java]
+----
+// Save the document and close it
+myDocument.save("MyFirstPDF.pdf");
+myDocument.close();
+----
+
+Now you should find a file called *MyFirstPDF.pdf* in the root directory of your project.
+If you open it, it should only contain a single empty page.
