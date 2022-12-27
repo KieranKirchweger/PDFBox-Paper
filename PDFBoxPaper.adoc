@@ -4,7 +4,7 @@
 
 == Before we Start
 For this paper, we will create a maven project to showcase different usages for the PDFBox library.
-First set up a Java project with Maven in the IDE of your choice. To learn how to check out the  do that https://maven.apache.org/guides/getting-started/[official getting started with Maven guide].
+First set up a Java project with Maven in the IDE of your choice. To learn how to do that, check out the  https://maven.apache.org/guides/getting-started/[official getting started with Maven guide].
 
 Then we can add PDFBox to our project.
 To do that, simply add the following to your Maven project's pom.xml in the *dependencies* section:
