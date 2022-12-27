@@ -1,0 +1,19 @@
+# Manipulating PDFs in Java with Apache PDFBox
+
+## Table of Content
+
+## Getting Started
+For this paper, we will create a maven project to showcase different usages for the PDFBox library. First we need to add PDFBox to our project.
+
+To do that, simply add the following to your Maven project's pom.xml in the `dependencies` section:
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.apache.pdfbox</groupId>
+    <artifactId>pdfbox</artifactId>
+    <version>2.0.27</version>
+</dependency>
+----
+
+Then reload your dependencies and you're good to go.
