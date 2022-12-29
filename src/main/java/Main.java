@@ -2,7 +2,8 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) throws IOException {
-        // BlankPage.createBlankPage();
-        HelloWorldPage.createHelloWorldPage();
+        //BlankPage.createBlankPage();
+        //HelloWorldPage.createHelloWorldPage();
+        Playground.createHelloWorldPage();
     }
 }

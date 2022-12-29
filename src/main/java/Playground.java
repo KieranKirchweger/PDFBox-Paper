@@ -2,12 +2,13 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.font.*;
+import org.apache.pdfbox.pdmodel.font.PDFont;
+import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 
 import java.io.IOException;
 
-public class HelloWorldPage {
+public class Playground {
     public static void createHelloWorldPage() throws IOException {
         // Create a new document and add a page to it
         PDDocument document = new PDDocument();
@@ -19,7 +20,6 @@ public class HelloWorldPage {
 
         // Select a font
         PDFont font = PDType1Font.TIMES_ROMAN;
-
 
         // Start writing
         contentStream.beginText();
